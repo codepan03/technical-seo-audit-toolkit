@@ -1,0 +1,50 @@
+{
+  "url": "https://pypi.org",
+  "timestamp": "2026-05-14T18:17:40.548559",
+  "crawl": {
+    "robots_txt": {
+      "status": 200,
+      "found": true,
+      "disallow_count": 12,
+      "sitemap_declared": true,
+      "crawl_delay_set": false,
+      "crawl_delay_lines": [],
+      "warnings": []
+    },
+    "sitemap": {
+      "found": true,
+      "url_count": 0,
+      "is_index": true,
+      "child_sitemaps": 257,
+      "warnings": []
+    },
+    "redirect_chain": {
+      "final_url": "https://pypi.org/",
+      "hop_count": 0,
+      "chain": [
+        "https://pypi.org/"
+      ],
+      "warnings": []
+    }
+  },
+  "headers": {
+    "status_code": 200,
+    "canonical_header": {
+      "present": false,
+      "note": "No canonical set via HTTP header"
+    },
+    "x_robots_tag": {
+      "present": false,
+      "value": "",
+      "warnings": []
+    },
+    "https_enforced": {
+      "enforced": true,
+      "warnings": []
+    },
+    "cache_control": "not set",
+    "content_type": "text/html; charset=UTF-8",
+    "warnings": []
+  },
+  "rendering": {}
+}
