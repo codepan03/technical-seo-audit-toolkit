@@ -42,7 +42,35 @@ python3 cli.py --url https://yoursite.com --skip-render
 Results print to terminal and save to sample_output/audit_result.json.
 
 ## Sample output
+```
+Technical SEO Audit Toolkit
+Target: https://pypi.org
+
+CRAWL AUDIT
+  ✔  robots.txt found (HTTP 200)
+  Disallow rules: 12
+  Sitemap declared: True
+  ✔  sitemap.xml found — 257 child sitemaps
+  ✔  No redirect chain detected
+
+HEADER AUDIT
+  Status code: 200
+  ✔  No x-robots-tag header (normal)
+  ✔  HTTPS enforced
+  ⚠  Cache-Control: not set
+```
 ## Project structure
+```
+technical-seo-audit-toolkit/
+├── cli.py
+├── requirements.txt
+├── audits/
+│   ├── crawl.py
+│   ├── headers.py
+│   └── rendering.py
+└── sample_output/
+    └── audit_result.json
+```
 ## Roadmap
 
 GSC API integration to pull Search Console crawl stats directly into the audit pipeline. BigQuery export for multi-site time-series analysis across client portfolios. Lambda deployment to run rendering audits serverlessly via API Gateway. Cloudflare Worker templates for common edge SEO fixes without touching application code. Each item maps to a milestone in an ongoing AWS certification path.
